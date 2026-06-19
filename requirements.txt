@@ -9,8 +9,6 @@ appnope==0.1.4 ; sys_platform == 'darwin'
     # via ipykernel
 asttokens==3.0.0
     # via stack-data
-asyncio==3.4.3
-    # via ds-container-workspace
 certifi==2025.4.26
     # via
     #   httpcore
