@@ -1,0 +1,37 @@
+{
+    "permissions": {
+        "deny": [
+            "Bash(pip:*)",
+            "Bash(pip3:*)",
+            "Bash(conda:*)"
+        ]
+    },
+    "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash .claude/hooks/pre_bash_check.sh"
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "matcher": "Write|Edit|MultiEdit",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash .claude/hooks/ruff_lint.sh"
+                    },
+                    {
+                        "type": "command",
+                        "command": "bash .claude/hooks/ty_check.sh"
+                    }
+                ]
+            }
+        ]
+    }
+}

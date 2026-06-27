@@ -1,0 +1,38 @@
+{
+    "name": "${localWorkspaceFolderBasename}-devcontainer",
+    "image": "mcr.microsoft.com/devcontainers/python:3.13-trixie",
+    "remoteUser": "vscode",
+    "forwardPorts": [8888],
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.claude",
+            "target": "/tmp/.claude-host",
+            "type": "bind"
+        }
+    ],
+    "updateContentCommand": {
+        "0": "bash .devcontainer/scripts/install_uv.sh",
+        "1": "bash .devcontainer/scripts/setup_claude.sh"
+    },
+    "containerEnv": {
+        "PYTHONPATH": "${containerWorkspaceFolder}",
+        "UV_PROJECT_ENVIRONMENT": "${containerWorkspaceFolder}/.venv",
+        "JUPYTER_DATA_DIR": "${containerWorkspaceFolder}",
+        "UV_COMPILE_BYTECODE": "1",
+        "PYTHONUNBUFFERED": "True",
+        "UV_LINK_MODE": "copy"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "redhat.vscode-yaml",
+                "tamasfe.even-better-toml",
+                "astral-sh.ty",
+                "njpwerner.autodocstring"
+            ]
+        }
+    }
+}

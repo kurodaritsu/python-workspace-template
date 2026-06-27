@@ -1,0 +1,42 @@
+[project]
+name = "ds-container-workspace"
+version = "2026.06.001"
+requires-python = "==3.13.*"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "numpy==2.2.4",
+    "pandas==2.2.3",
+    "matplotlib==3.11.0",
+    "seaborn==0.13.2",
+    "ipython==9.14.1",
+    "ipykernel==7.3.0",
+    "httpx==0.28.1",
+    "aiofiles==25.1.0",
+    "tornado>=6.5.7",
+    "fonttools>=4.61.0",
+    "pillow>=12.2.0",
+    "pygments>=2.20.0",
+    "idna>=3.15",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.3",
+    "ty==0.0.23",
+    "ruff==0.15.7",
+]
+
+[tool.ty.src]
+exclude = ["tests/**"]
+
+[tool.ruff]
+namespace-packages = ["src"]
+
+[tool.uv.build-backend]
+module-root = ""
+module-name = "src"
+
+[build-system]
+requires = ["uv_build<=0.12"]
+build-backend = "uv_build"
