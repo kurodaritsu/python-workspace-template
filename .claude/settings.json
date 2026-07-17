@@ -4,6 +4,11 @@
             "Bash(pip:*)",
             "Bash(pip3:*)",
             "Bash(conda:*)"
+        ],
+        "allow": [
+            "Bash(uv run ruff:*)",
+            "Bash(uv run ty:*)",
+            "Bash(uv run pytest:*)"
         ]
     },
     "hooks": {
