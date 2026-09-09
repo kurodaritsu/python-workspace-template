@@ -17,6 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - The `app/`, `data/`, `docs/`, `models/`, `notebooks/` and `scripts/` are placeholder directories. You may delete them by removing `.gitkeep` inside of each directory depending on your use case on this repo.
 - If you're using `src/`, rename the module docstrings `"""` in [`src/__init__.py`](./src/__init__.py).
 - Rename the project name in [`pyproject.toml`](./pyproject.toml) accordingly.
+- Rename the [`CODEOWNERS`](./.github/CODEOWNERS) file to the user's github username if necessary.
 - Ask the user if they want to keep the MIT License initially configured here if they are making a new project with this template. Make changes on the owner name and year if necessary. If the user asks for another license, apply it to [`LICENSE`](./LICENSE).
 
 ## Preset Rules & Skills
