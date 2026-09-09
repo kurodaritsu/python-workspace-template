@@ -1,1 +1,1 @@
-"""Data science workspace source package."""
+"""Python workspace template (CHANGE ME)."""
