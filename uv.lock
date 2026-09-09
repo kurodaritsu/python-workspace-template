@@ -158,7 +158,7 @@ wheels = [
 
 [[package]]
 name = "ds-container-workspace"
-version = "2026.6.1"
+version = "2026.9.1"
 source = { editable = "." }
 dependencies = [
     { name = "aiofiles" },

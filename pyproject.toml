@@ -1,6 +1,9 @@
+# For details, visit:
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+
 [project]
 name = "ds-container-workspace"
-version = "2026.06.001"
+version = "2026.09.001"
 requires-python = "==3.13.*"
 license = { file = "LICENSE" }
 
