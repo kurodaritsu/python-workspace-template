@@ -23,10 +23,10 @@
         {
             "label": "Create .env file",
             "type": "shell",
-            "command": "bash scripts/create_env_file.sh",
+            "command": "bash .vscode/scripts/create_env_file.sh",
             "presentation": {
                 "echo": false,
-                "reveal": "silent",
+                "reveal": "never",
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": false,
