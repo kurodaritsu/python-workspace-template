@@ -1,6 +1,17 @@
+# NOTE: This would matter if you're building a Dockerfile in this repo,
+# though I'll keep these pre-filled for the meantime
+
 .env
 .venv/
 **/__pycache__/
 data/
 **/.gitkeep
 **/*.ipynb_checkpoints
+.claude/
+.cache/
+.github/
+.pytest_cache/
+.ruff_cache/
+.worktrees/
+.gitattributes
+.gitignore
