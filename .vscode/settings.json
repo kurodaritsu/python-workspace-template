@@ -14,12 +14,6 @@
     "python.testing.pytestArgs": [
         "tests"
     ],
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "/bin/bash"
-        }
-    },
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
