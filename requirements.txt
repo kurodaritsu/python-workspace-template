@@ -3,7 +3,7 @@
 -e .
 aiofiles==25.1.0
     # via ds-container-workspace
-anyio==4.10.0
+anyio==4.14.2
     # via httpx
 appnope==0.1.4 ; sys_platform == 'darwin'
     # via ipykernel
