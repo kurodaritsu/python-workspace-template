@@ -11,8 +11,9 @@ appnope==0.1.4 ; sys_platform == 'darwin'
     # via ipykernel
 asttokens==3.0.0
     # via stack-data
-certifi==2026.10.19
+certifi==2025.4.26
     # via
+    #   ds-container-workspace
     #   httpcore
     #   httpx
 cffi==1.17.1 ; implementation_name == 'pypy'
